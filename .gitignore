@@ -129,15 +129,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+#nodejs package-lock
 package-lock.json
 
-#imsi
-Dockerfile
 
 
-
-### Database ###
+# Database #
 *.accdb
 *.db
 *.dbf
@@ -146,3 +143,8 @@ Dockerfile
 *.sqlite3
 *.db-shm
 *.db-wal
+
+
+#firebase
+google-services.json
+toget-829b5-firebase-adminsdk-gqbci-72ae9a9b55.json
