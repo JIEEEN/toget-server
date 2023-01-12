@@ -148,3 +148,6 @@ package-lock.json
 #firebase
 google-services.json
 toget-829b5-firebase-adminsdk-gqbci-72ae9a9b55.json
+
+#dotenv
+.env
