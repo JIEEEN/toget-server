@@ -35,11 +35,6 @@ module.exports = (sequelize, DataTypes) => {
             unique: false,
             allowNull: false
         },
-        email:{
-            type: DataTypes.STRING(30),
-            unique: false,
-            allowNull: true
-        },
         birth:{
             type: DataTypes.DATE,
             unique: false,

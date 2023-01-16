@@ -1,8 +1,9 @@
 const express = require('express');
-const users = express.Router();
+//const oAuth = require('./auth');
+const user = express.Router();
 const { User } = require('../database/models/index');
 
-users
+user
     .route('/') // /user
     .get(async (req, res)=>{
         const users = await User.findAll();
@@ -10,9 +11,15 @@ users
 
         for(var user of users){
             result.push({
-                id: user.id,
-                pwd: user.pwd,
-                name: user.name
+                id : user.id,
+                pwd : user.pwd,
+                name : user.name,
+                age : user.age,
+                sex : user.sex,
+                loc : user.loc,
+                phone : user.phone,
+                birth : user.birth,
+                nickname : user.nickname
             });
         }
 
@@ -27,4 +34,4 @@ users
 
 
 
-module.exports = users;
+module.exports = user;
