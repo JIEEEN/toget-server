@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             unique: true
         },
         pwd:{
-            type: DataTypes.STRING(30),
+            type: DataTypes.STRING(100),
             unique: false,
             allowNull: false
         },
@@ -48,6 +48,5 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
         timestamps: false
-    }
-    )
+    })
 };
