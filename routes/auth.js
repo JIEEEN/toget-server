@@ -22,7 +22,8 @@ auth.
             const hash = await bcrypt.hash(pwd, 10); //해시함수 반복횟수
 
             await User.create({
-                id, pwd:hash, name, age, sex, loc, phone, birth, nickname
+                //id, pwd:hash, name, age, sex, loc, phone, birth, nickname
+                id, pwd, name, age, sex, loc, phone, birth, nickname
             })
             .then(console.log('User create Success!'));
 
